@@ -1,0 +1,184 @@
+.bgnoise {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://uploads-ssl.webflow.com/62c435401c8f7261df7dac30/62c5acd6c07e3c25ed49ea71_624d5860b71355f93453ff75_grain.gif'),
+    url('https://uploads-ssl.webflow.com/62c435401c8f7261df7dac30/62c44e50efe5bfb56fdc13a4_Andy-hooke-bg%20(1).jpg');
+  background-position: 0 0, 0 0;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  opacity: 0.05;
+}
+
+.bggradient {
+  position: fixed;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://uploads-ssl.webflow.com/62c435401c8f7261df7dac30/62c44e50efe5bfb56fdc13a4_Andy-hooke-bg%20(1).jpg');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.pagepadding {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.darkSection {
+  background-color: #0f1825;
+  color: #fff;
+  width: 100%;
+}
+.lightSection {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  min-height: 8rem;
+  padding-right: 6%;
+  padding-left: 6%;
+  background-color: transparent;
+  color: #0f1825;
+}
+.navbarLogoText {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  gap: 8px;
+}
+.navbarLogo {
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+.navbarText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Grifter, Arial, Helvetica, sans-serif;
+  font-size: 20.8px;
+  line-height: 1;
+  color: #0f1825;
+}
+
+.nvabarLogoDotAnimation {
+  transform: translate3d(0px, 0px, 0px) scale3d(1.275, 1.275, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 0.653336;
+  will-change: opacity, transform;
+}
+
+.navbarLogoDot {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #58dd29;
+}
+
+.navbarTextRow {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-family: Plusjakartasans, sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  list-style: none;
+  color: #0f1825;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  gap: 48px;
+
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #0f1825;
+  }
+}
+
+.navTextWwmeContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navTextWwme {
+  color: #6164fa;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  line-height: 1.2;
+  font-weight: 700;
+  width: 60%;
+  font-size: 70px;
+  font-family: Grifter, Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  color: #0b111b;
+}
+.textSizeLarge {
+  font-size: 1.5rem;
+  color: #0b111b;
+}
+
+.baseButton {
+  border: none;
+  background-color: #0f1825;
+  padding: 24px 48px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.buttonBright {
+  color: #0f1825;
+  background-color: #ffffff;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.buttonArrowContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  img {
+    position: absolute;
+    border-radius: 12px;
+  }
+}
