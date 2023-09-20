@@ -193,9 +193,18 @@ h1 {
   justify-content: center;
   width: 100%;
   img {
+    border-radius: 8px;
     width: 90%;
     position: absolute;
     top: 50px;
+  }
+  div {
+    width: 90%;
+    height: 720px;
+    position: absolute;
+    top: 50px;
+    background-color: #6164fa;
+    border-radius: 8px;
   }
 }
 
@@ -217,18 +226,79 @@ h1 {
   transform-style: preserve-3d;
 }
 
-.animate {
+.rotateRight {
   animation-name: spin;
   animation-duration: 1000ms;
-  animation-iteration-count: 1;
+  animation-iteration-count: initial;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 
   @keyframes spin {
     from {
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(-10deg);
+      transform: rotate(2deg);
     }
   }
+}
+.rotateLeft {
+  animation-name: spin2;
+  animation-duration: 1000ms;
+  animation-iteration-count: initial;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  @keyframes spin2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-2deg);
+    }
+  }
+}
+
+.headingLargeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50%;
+  justify-content: left;
+  h2 {
+    font-family: Grifter, Arial, Helvetica, sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+  }
+  p {
+    color: #6164fa;
+    font-size: 17px;
+    font-weight: bold;
+  }
+}
+.inlineMenueBarContainer {
+  margin-right: 30%;
+  padding-top: 30px;
+  overflow: hidden;
+  .inlineMenueBar {
+    position: sticky;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #1c2531;
+    height: 40px;
+    border-radius: 25px;
+    width: 100%;
+    gap: 8px;
+
+    span {
+      padding: 16px;
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
+}
+.whymeSubSection {
+  height: 1000px;
 }

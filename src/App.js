@@ -71,9 +71,10 @@ export default function App() {
               Learn more
             </a>
           </div>
-          <div className={`${styles.heroImageContainer} ${styles.transform}`}>
+          <div className={`${styles.heroImageContainer} `}>
+            <div className={styles.rotateLeft}> </div>
             <img
-              className={styles.animate}
+              className={styles.rotateRight}
               src={conceptHero}
               alt="conceptHero"
             />
@@ -96,6 +97,24 @@ export default function App() {
         <br />
         <br />
         <br />
+        <div className={styles.headingLargeContainer}>
+          <p>WHY ME</p>
+          <h2>Results driven design, with a personal touch</h2>
+          <div className={styles.inlineMenueBarContainer}>
+            <div className={styles.inlineMenueBar}>
+              <span>Custom Design</span>
+              <span>Reliable</span>
+              <span>Quality</span>
+              <span>My guarantee</span>
+            </div>
+          </div>
+        </div>
+
+        <section className={styles.whymeSubSection}>
+          <br />
+          <br />
+          <br />
+        </section>
       </section>
       <section className={styles.lightSection}>
         <div className={styles.pagepadding}>section2</div>
